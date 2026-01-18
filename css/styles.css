@@ -660,3 +660,10 @@ h6 {
 .spec-row:last-child {
     border-bottom: none;
 }
+
+@media (max-width: 768px) {
+    .product-visual {
+        position: static !important;
+        top: auto !important;
+    }
+}
