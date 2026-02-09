@@ -25,11 +25,15 @@
     {
         "@context": "https://schema.org/",
         "@type": "Product",
-        "name": "Deprogel-PGS",
+        "name": "Deprogel-PGS (Pregelatinized Starch)",
         "image": "https://dpchemicals.in/images/pgs-product.jpg",
         "description": "Physically Modified Pregelatinised Starch acting as both binder and disintegrant. Excellent flowability for direct compression.",
         "brand": {
           "@type": "Brand",
+          "name": "D.P.CHEMICALS"
+        },
+        "manufacturer": {
+          "@type": "Organization",
           "name": "D.P.CHEMICALS"
         },
         "sku": "DPC-PGS-001",
@@ -41,23 +45,120 @@
         }
     }
     </script>
-    <link rel="stylesheet" href="css/modern-reset.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is Pregelatinized Starch used for in Pharma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pregelatinized Starch is a multi-functional excipient used as a binder, disintegrant, and flow aid. It acts as a tablet binder in wet granulation and direct compression, increasing tablet hardness while still allowing for disintegration."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is Deprogel-PGS suitable for Direct Compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Deprogel-PGS is specifically processed to have excellent flow properties, making it an ideal choice for direct compression formulations where flowability is critical."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does Pregelatinized Starch differ from normal starch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pregelatinized Starch has been physically modified (cooked and dried) to become cold-water swellable. This gives it better binding and flow properties compared to native starch."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What standards does Deprogel-PGS meet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deprogel-PGS complies with the pharmacopoeial standards of IP, USP/NF, and BP, ensuring high quality and consistency for pharmaceutical use."
+        }
+      }]
+    }
+    </script>
+    <style>
+        /* Modern CSS Reset */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            overflow-wrap: break-word;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PHBQ51G1M"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <!-- Font Awesome for Icons (Async) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
-	  gtag('config', 'G-0PHBQ51G1M');
-	</script>
+    <link rel="preload" as="image" href="images/pgs-product.jpg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PHBQ51G1M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0PHBQ51G1M');
+    </script>
     <style>
         .page-header {
             background-color: var(--secondary-color);
@@ -175,7 +276,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="DPC Logo.png" alt="DPC Logo">
+                <img src="DPC Logo.png" alt="DPC Logo" width="45" height="45">
                 <div class="logo-text">
                     <span class="logo-title">D.P.CHEMICALS</span>
                     <span class="logo-subtitle">Excellence in Excipients</span>
@@ -203,7 +304,7 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1>Deprogel-PGS</h1>
+            <h1>Deprogel-PGS (Pregelatinized Starch)</h1>
             <div class="breadcrumb">
                 <a href="index.html">Home</a> / <a href="products.html">Products</a> / Deprogel-PGS
             </div>
@@ -216,7 +317,7 @@
             <div class="product-grid">
                 <div class="product-visual">
                     <i class="fas fa-capsules"></i>
-                    <h3>Deprogel-PGS</h3>
+                    <h3>Deprogel-PGS (Pregelatinized Starch)</h3>
                     <p style="color: var(--text-light); margin-top: 0.5rem;">Pregelatinised Starch</p>
 
                     <div class="product-specs">
@@ -238,8 +339,9 @@
                         Quote</a>
                 </div>
                 <div class="product-content">
-                    <h2>Deprogel-PGS</h2>
-                    <span class="product-subtitle">Physically Modified Pregelatinised Starch</span>
+                    <h2>Deprogel-PGS (Pregelatinized Starch)</h2>
+                    <h1 class="product-subtitle" style="font-size: 1.1rem; margin-top: 0; margin-bottom: 1.5rem;">
+                        Pregelatinized Starch Manufacturer</h1>
                     <p style="line-height: 1.7; color: var(--text-medium);">
                         DEPROGEL-PGS is a unique excipient that serves a dual purpose as both a binder and a
                         disintegrant. It is a partially pregelatinised starch modified strictly by physical methods,
@@ -324,6 +426,58 @@
                         <p style="font-size: 0.8rem; color: #999; margin-top: 0.5rem;">* Standard pharmacological
                             specifications. Actual batch COA available on request.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background-color: var(--bg-white);">
+        <div class="container">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Often Asked Questions</h2>
+                <p style="color: var(--text-medium);">Technical insights about utilizing Pregelatinized Starch in your
+                    formulations.</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 1.5rem;">
+                <!-- FAQ Item 1 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">What is
+                        Pregelatinized Starch used for in Pharma?</h3>
+                    <p style="color: var(--text-medium);">Pregelatinized Starch is a multi-functional excipient used as
+                        a binder, disintegrant, and flow aid. It acts as a tablet binder in wet granulation and direct
+                        compression, increasing tablet hardness while still allowing for disintegration.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">Is Deprogel-PGS
+                        suitable for Direct Compression?</h3>
+                    <p style="color: var(--text-medium);">Yes, Deprogel-PGS is specifically processed to have excellent
+                        flow properties, making it an ideal choice for direct compression formulations where flowability
+                        is critical.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">How does
+                        Pregelatinized Starch differ from normal starch?</h3>
+                    <p style="color: var(--text-medium);">Pregelatinized Starch has been physically modified (cooked and
+                        dried) to become cold-water swellable. This gives it better binding and flow properties compared
+                        to native starch.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">What standards does
+                        Deprogel-PGS meet?</h3>
+                    <p style="color: var(--text-medium);">Deprogel-PGS complies with the pharmacopoeial standards of IP,
+                        USP/NF, and BP, ensuring high quality and consistency for pharmaceutical use.</p>
                 </div>
             </div>
         </div>

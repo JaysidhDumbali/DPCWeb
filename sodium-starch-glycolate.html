@@ -25,11 +25,15 @@
     {
         "@context": "https://schema.org/",
         "@type": "Product",
-        "name": "Deprogel-SSG",
+        "name": "Deprogel-SSG (Sodium Starch Glycolate)",
         "image": "https://dpchemicals.in/images/ssg-product.jpg",
         "description": "Sodium Starch Glycolate (Type A) super disintegrant. Rapid water uptake and massive swelling for fast drug release.",
         "brand": {
           "@type": "Brand",
+          "name": "D.P.CHEMICALS"
+        },
+        "manufacturer": {
+          "@type": "Organization",
           "name": "D.P.CHEMICALS"
         },
         "sku": "DPC-SSG-001",
@@ -41,23 +45,120 @@
         }
     }
     </script>
-    <link rel="stylesheet" href="css/modern-reset.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is Sodium Starch Glycolate Type A?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sodium Starch Glycolate Type A is a super disintegrant made from potato starch. It is widely used in pharmaceutical formulations to ensure rapid disintegration and dissolution of tablets and capsules."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does Deprogel-SSG work in tablet formulations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deprogel-SSG works by rapid water uptake, swelling up to 300 times its volume. This massive swelling exerts pressure inside the tablet, causing it to burst apart and release the active pharmaceutical ingredient (API) quickly."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can Sodium Starch Glycolate be used in both wet and dry granulation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Sodium Starch Glycolate is highly versatile and effective in both wet granulation and direct compression (dry granulation) processes. It can be added intragranularly or extragranularly."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the recommended concentration of Sodium Starch Glycolate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The typical recommended concentration ranges from 2% to 8% of the tablet weight, although optimum disintegration is often achieved around 4%."
+        }
+      }]
+    }
+    </script>
+    <style>
+        /* Modern CSS Reset */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            overflow-wrap: break-word;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PHBQ51G1M"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <!-- Font Awesome for Icons (Async) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
-	  gtag('config', 'G-0PHBQ51G1M');
-	</script>
+    <link rel="preload" as="image" href="images/ssg-product.jpg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PHBQ51G1M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0PHBQ51G1M');
+    </script>
     <style>
         .page-header {
             background-color: var(--secondary-color);
@@ -175,7 +276,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="DPC Logo.png" alt="DPC Logo">
+                <img src="DPC Logo.png" alt="DPC Logo" width="45" height="45">
                 <div class="logo-text">
                     <span class="logo-title">D.P.CHEMICALS</span>
                     <span class="logo-subtitle">Excellence in Excipients</span>
@@ -203,7 +304,7 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1>Deprogel-SSG</h1>
+            <h1>Deprogel-SSG (Sodium Starch Glycolate)</h1>
             <div class="breadcrumb">
                 <a href="index.html">Home</a> / <a href="products.html">Products</a> / Deprogel-SSG
             </div>
@@ -215,8 +316,9 @@
         <div class="container">
             <div class="product-grid" style="grid-template-columns: 1.5fr 1fr;">
                 <div class="product-content">
-                    <h2>Deprogel-SSG</h2>
-                    <span class="product-subtitle">Sodium Starch Glycolate</span>
+                    <h2>Deprogel-SSG (Sodium Starch Glycolate)</h2>
+                    <h1 class="product-subtitle" style="font-size: 1.1rem; margin-top: 0; margin-bottom: 1.5rem;">Sodium
+                        Starch Glycolate Type A Manufacturer</h1>
                     <p style="line-height: 1.7; color: var(--text-medium);">
                         DEPROGEL-SSG is the <strong>sodium salt of carboxymethyl ether of starch</strong> (Sodium
                         Carboxy Methyl Starch). It is a premier disintegrating agent widely utilized in oral
@@ -298,9 +400,9 @@
                 </div>
                 <div class="product-visual">
                     <img src="dpchemicals_sodium_starch_glycolate_potato_starch_usp_ep_bp_cas_no_9063_38_1_certification_iso.webp"
-                        alt="Deprogel-SSG Product Image"
-                        style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
-                    <h3>Deprogel-SSG</h3>
+                        alt="Deprogel-SSG Product Image" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;"
+                        width="500" height="500">
+                    <h3>Deprogel-SSG (Sodium Starch Glycolate)</h3>
                     <p style="color: var(--text-light); margin-top: 0.5rem;">Sodium Starch Glycolate</p>
 
                     <div class="product-specs">
@@ -328,6 +430,58 @@
 
                     <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">Request
                         Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background-color: var(--bg-white);">
+        <div class="container">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Often Asked Questions</h2>
+                <p style="color: var(--text-medium);">Technical insights about utilizing Sodium Starch Glycolate in your
+                    formulations.</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 1.5rem;">
+                <!-- FAQ Item 1 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">What is Sodium Starch
+                        Glycolate Type A?</h3>
+                    <p style="color: var(--text-medium);">Sodium Starch Glycolate Type A is a super disintegrant made
+                        from potato starch. It is widely used in pharmaceutical formulations to ensure rapid
+                        disintegration and dissolution of tablets and capsules.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">How does Deprogel-SSG
+                        work in tablet formulations?</h3>
+                    <p style="color: var(--text-medium);">Deprogel-SSG works by rapid water uptake, swelling up to 300
+                        times its volume. This massive swelling exerts pressure inside the tablet, causing it to burst
+                        apart and release the active pharmaceutical ingredient (API) quickly.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">Can Sodium Starch
+                        Glycolate be used in both wet and dry granulation?</h3>
+                    <p style="color: var(--text-medium);">Yes, Sodium Starch Glycolate is highly versatile and effective
+                        in both wet granulation and direct compression (dry granulation) processes. It can be added
+                        intragranularly or extragranularly.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    style="background: var(--bg-off-white); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-dark);">What is the
+                        recommended concentration of Sodium Starch Glycolate?</h3>
+                    <p style="color: var(--text-medium);">The typical recommended concentration ranges from 2% to 8% of
+                        the tablet weight, although optimum disintegration is often achieved around 4%.</p>
                 </div>
             </div>
         </div>
